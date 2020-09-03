@@ -1,0 +1,29 @@
+#!/bin/bash
+#Description: CENTOS7-HARDENING-CIS.TXT
+#Author: Mariama
+#Date: Sept 2020
+
+
+install cramfs
+install freevxfs
+install jffs2
+install hfs
+install hfsplus 
+install squashfs 
+install udf 
+install dccp
+install sctp
+install rds 
+install tipc 
+
+
+
+
+rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-centos7-release 
+systemctl enable firewalld	
+systemctl enable rsyslog			
+systemctl enable auditd				
+systemctl enable crond
+
+
+
